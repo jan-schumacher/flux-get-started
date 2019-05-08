@@ -2,13 +2,13 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: redis
-  namespace: default
+  name: redis-2
+  namespace: demo
   annotations:
     flux.weave.works/automated: "false"
 #    flux.weave.works/tag.chart-image: semver:4.0.14
 spec:
-  releaseName: redis
+  releaseName: redis-2
   chart:
     git: https://github.com/helm/charts.git
     path: stable/redis
